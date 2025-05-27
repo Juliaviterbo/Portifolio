@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Julia Viterbo</title>
+    <style>
+        body {
+            background-color: #ffe6f0;
+            font-family: Arial, sans-serif;
+            color: #d63384;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffb3d9;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            padding: 20px;
+        }
+        section {
+            background-color: #fff0f5;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px #ffcce5;
+        }
+        h2 {
+            color: #cc0066;
+        }
+        footer {
+            background-color: #ffb3d9;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Julia Viterbo</h1>
+    <p>Portfólio Pessoal</p>
+</header>
+
+<div class="container">
+
+    <section>
+        <h2>✨ Sobre Mim</h2>
+        <p>Olá! Me chamo Julia Viterbo, tenho 19 anos. Sou apaixonada por tecnologia, estudante de Técnico em Redes de Computadores e cursando Engenharia da Computação. Sempre em busca de aprender e me desenvolver na área de tecnologia.</p>
+    </section>
+
+    <section>
+        <h2>💻 Stack Técnica</h2>
+        <ul>
+            <li>Redes de Computadores</li>
+            <li>HTML, CSS e Git</li>
+            <li>Fundamentos de Engenharia</li>
+            <li>Conceitos de Infraestrutura de TI</li>
+            <li>Iniciando em Programação e Automação</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>🏆 Experiências & Conquistas</h2>
+        <ul>
+            <li>Desenvolvimento de projetos acadêmicos na área de redes</li>
+            <li>Participação em eventos e workshops de tecnologia</li>
+            <li>Início de projetos pessoais hospedados no GitHub</li>
+        </ul>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2025 - Julia Viterbo</p>
+</footer>
+
+</body>
+</html>
