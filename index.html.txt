@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Julia Viterbo</title>
+    <style>
+        body {
+            background-color: #ffe6f0;
+            color: #99004d;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Animação tipo Matrix em rosa */
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        header {
+            background-color: #ff99cc;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff0f5;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ffb3d9;
+        }
+
+        h2 {
+            color: #cc0066;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        button {
+            background-color: #ff66b2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #e60073;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        footer {
+            background-color: #ff99cc;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .social-icons img {
+            width: 32px;
+            height: 32px;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="matrixCanvas"></canvas>
+
+    <header>
+        <h1>Julia Viterbo</h1>
+        <p>19 anos | Técnica em Redes de Computadores | Graduanda em Engenharia da Computação | Apaixonada por Tecnologia</p>
+    </header>
+
+    <section>
+        <h2>🌸 Sobre Mim</h2>
+        <p>Sou uma entusiasta da tecnologia! Atualmente curso Técnico em Redes de Computadores e estou na graduação em Engenharia da Computação. Sempre fui apaixonada por tecnologia, inovação e resolver problemas através de soluções inteligentes.</p>
+    </section>
+
+    <section>
+        <h2>💻 Stack Técnica</h2>
+
+        <button onclick="toggle('redes')">Mostrar/Esconder Redes de Computadores</button>
+        <div id="redes" class="hidden">
+            <ul>
+                <li><b>Protocolos:</b> TCP/IP, UDP, HTTP/HTTPS, DNS, DHCP, FTP, SNMP, ICMP</li>
+                <li><b>Infraestrutura:</b> Roteadores, Switches, Firewalls, Access Points, Load Balancer</li>
+                <li><b>Ferramentas:</b> Cisco Packet Tracer, GNS3, Wireshark, NetTools, Nmap</li>
+                <li><b>Serviços de Rede:</b> DNS, DHCP, VPN, NAT, VLAN, Proxy, Radius</li>
+                <li><b>Cabling e Wireless:</b> Cabeamento estruturado, Fibra Óptica, Redes Wi-Fi (802.11)</li>
+                <li><b>Cloud Networking:</b> AWS VPC, Azure VNET, Google Cloud VPC, VPN Gateways</li>
+                <li><b>Segurança em redes:</b> Firewall, IDS/IPS, NAC, VLANs seguras, segmentação</li>
+                <li><b>Sistemas Operacionais:</b> Windows Server, Linux (Ubuntu, Debian, CentOS), pfSense</li>
+            </ul>
+        </div>
+
+        <button onclick="toggle('engenharia')">Mostrar/Esconder Engenharia da Computação</button>
+        <div id="engenharia" class="hidden">
+            <ul>
+                <li><b>Programação:</b> C, C++, Python, Java, Assembly, MATLAB</li>
+                <li><b>Hardware e Eletrônica:</b> Arduino, Raspberry Pi, FPGA, Microcontroladores (PIC, ESP32, STM32)</li>
+                <li><b>Sistemas Digitais:</b> Circuitos Lógicos, VHDL, Verilog, HDL</li>
+                <li><b>Modelagem e Simulação:</b> MATLAB, Simulink, Proteus, Multisim</li>
+                <li><b>Sistemas Operacionais:</b> Windows, Linux, RTOS (FreeRTOS, VxWorks)</li>
+                <li><b>Desenvolvimento de Software:</b> Engenharia de Software, Git, GitHub, DevOps básico</li>
+                <li><b>Redes e Comunicação:</b> TCP/IP, IoT, Protocolo MQTT, Modbus, CAN bus</li>
+                <li><b>Inteligência Artificial e Machine Learning:</b> TensorFlow, Scikit-Learn, OpenCV</li>
+                <li><b>Controle e Automação:</b> PLCs, Ladder, SCADA, sensores e atuadores</li>
+                <li><b>Projetos Integrados:</b> Desenvolvimento de sistemas embarcados, robótica, automação industrial, IoT</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>🏆 Experiências | Conquistas | Reconhecimentos</h2>
+        <ul>
+            <li>Curso Técnico em Redes de Computadores em andamento</li>
+            <li>Graduanda em Engenharia da Computação</li>
+            <li>Projetos acadêmicos de redes, automação e desenvolvimento</li>
+            <li>Estudos autônomos em computação, eletrônica e programação</li>
+            <li>Portfólio em construção e aprendizado contínuo</li>
+        </ul>
+    </section>
+
+    <section class="social-icons">
+        <h2>✨ Me encontre nas redes</h2>
+        <a href="https://www.instagram.com/ju_viterbo/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/julia-viterbo/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+        </a>
+    </section>
+
+    <footer>
+        <p>🌸 Desenvolvido por Julia Viterbo 🌸</p>
+    </footer>
+
+    <!-- Script para abrir/fechar as stacks -->
+    <script>
+        function toggle(id) {
+            const element = document.getElementById(id);
+            if (element.classList.contains('hidden')) {
+                element.classList.remove('hidden');
+            } else {
+                element.classList.add('hidden');
+            }
+        }
+    </script>
+
+    <!-- Script Animação tipo Matrix em Rosa -->
+    <script>
+        const canvas = document.getElementById('matrixCanvas');
+        const ctx = canvas.getContext('2d');
+
+        canvas.height = window.innerHeight;
+        canvas.width = window.innerWidth;
+
+        const letters = "01♡☆★";
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+        const drops = Array.from({length: columns}).fill(1);
+
+        function draw() {
+            ctx.fillStyle = "rgba(255, 230, 240, 0.1)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = "#ff66b2";
+            ctx.font = fontSize + "px monospace";
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = letters.charAt(Math.floor(Math.random() * letters.length));
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+
+                drops[i]++;
+            }
+        }
+
+        setInterval(draw, 33);
+    </script>
+
+</body>
+</html>
